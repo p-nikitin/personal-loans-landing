@@ -1,0 +1,344 @@
+doctype html
+html(lang="ru")
+	head
+		meta(http-equiv="x-ua-compatible" content="ie=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1")
+		link(rel="stylesheet" type="text/css" href="assets/libs/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet" type="text/css" href="assets/style/main.css")
+		title The Best Landing Page
+	body
+		.hidden
+			include ../images/sprite.svg
+		.page
+			.page__block.page__block--header
+				header.header
+					.container-fluid
+						.row.align-items-center
+							.col-lg-5
+								a.logo(href="/")
+									img.logo__img(src="assets/images/logo.png")
+									span.logo__text Personal loans
+							.col-lg-5
+								.header-contacts
+									address.header-address 28 Jackson Blvd Ste 1020 Chicago IL 60604-2340
+									.header-phone
+										span.header-phone__prefix tel:
+										a.header-phone__link(href="tel:88001234567") 8 800 123 45 67
+							.col-lg-2
+								.social-networks
+									a.social-networks__item(href="#")
+										i.social-networks__icon
+											svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+												use(xlink:href="#facebook-icon")
+									a.social-networks__item(href="#")
+										i.social-networks__icon
+											svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+												use(xlink:href="#twitter-icon")
+									a.social-networks__item(href="#")
+										i.social-networks__icon
+											svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+												use(xlink:href="#instagram-icon")
+			.page__block.page__block--form
+				.form
+					picture.form__bg
+						source(src="assets/images/banner_xs.jpg" media="(max-width: 576px)")
+						source(src="assets/images/banner_xs.webp" type="image/webp" media="(max-width: 576px)")
+						source(src="assets/images/banner_sm.jpg" media="(max-width: 768px)")
+						source(src="assets/images/banner_sm.webp" type="image/webp" media="(max-width: 768px)")
+						source(src="assets/images/banner_md.jpg" media="(max-width: 992px)")
+						source(src="assets/images/banner_md.webp" type="image/webp" media="(max-width: 992px)")
+						source(src="assets/images/banner_lg.jpg" media="(max-width: 1200px)")
+						source(src="assets/images/banner_lg.webp" type="image/webp" media="(max-width: 1200px)")
+						source(src="assets/images/banner.webp" type="image/webp")
+						img.form__img(src="/assets/images/banner.jpg" alt="banner")
+					.container-fluid
+						.row.align-items-center.justify-content-between
+							.col-md-7.col-lg-7
+								.form__description
+									h1 Personal Loans
+									p You can use our personal loans to get the car you want, consolidate your debts or for something else, like a new motorbike, boat or renovation.
+							.col-md-5.col-lg-4
+								.form__wrap
+									h2.form__title Apply now!
+									form.form__item
+										.form__group
+											input.form__control(type="text" name="first-name" placeholder="First Name")
+										.form__group
+											input.form__control(type="text" name="last-name" placeholder="Last Name")
+										.form__group
+											input.form__control(type="email" name="email" placeholder="E-mail")
+										.form__group
+											input.form__control(type="text" name="phone" placeholder="Phone")
+										.form__group
+											input.form__control(type="text" name="amount" placeholder="Amount")
+										.form__bottom
+											button.form__btn.btn.btn--primary Click here now!
+
+			.page__block.page__block--icons
+				.icons
+					.container-fluid
+						.row
+							.col-12
+								.icons__title Reasons to bank with us
+							.col-md-6.col-lg-3
+								.icons__item
+									.icons__pic
+										img.icons__img(src="assets/images/list-icon.svg" alt="list")
+									.icons__text Sign your loan documents at your home or work
+							.col-md-6.col-lg-3
+								.icons__item
+									.icons__pic
+										img.icons__img(src="assets/images/coin-icon.svg" alt="list")
+									.icons__text Same day funds when approved in-store by 2pm
+							.col-md-6.col-lg-3
+								.icons__item
+									.icons__pic
+										img.icons__img(src="assets/images/up-icon.svg" alt="list")
+									.icons__text Redraw available with variable rate loans
+							.col-md-6.col-lg-3
+								.icons__item
+									.icons__pic
+										img.icons__img(src="assets/images/deal-icon.svg" alt="list")
+									.icons__text No exit fees if you pay off your loan early
+			.page__block.page__block--price
+				.price
+					.container-fluid
+						.row.justify-content-between.align-items-md-center
+							.col-md-4.col-lg-3
+								.price__amount
+									.price__your Yours for only
+									.price__value 66
+									.price__time Per week*
+							.col-md-7.col-lg-8
+								.price__description
+									h2.price__title Borrow a little. Live a lot.
+									.price__text.price__text--big Afford your special something for only $66 a week*.
+									.price__text
+										p *$15,000 variable rate, 7 year term at 13.39% p.a. (14.26% p.a. comparison rate). Fees & charges are payable.
+									.price__footer
+										a.price__btn.btn.btn--success Click here now!
+			.page__block.page__block--gallery
+				.gallery
+					.container-fluid
+						.row.no-gutters.gallery__row
+							.col-sm-6.col-lg-4
+								a.gallery__item(href="/assets/images/gallery/1_orig.jpg" data-fancybox="gallery")
+									picture.gallery__pic
+										source(srcset="/assets/images/gallery/1.webp" type="image/webp")
+										img.gallery__img(src="/assets/images/gallery/1.jpg")
+									.gallery__info
+										.gallery__title Travel Loans
+										.gallery__description Our great rate Personal Loans can take you to places you'd rather be.
+							.col-sm-6.col-lg-4
+								a.gallery__item(href="/assets/images/gallery/2_orig.jpg" data-fancybox="gallery")
+									picture.gallery__pic
+										source(srcset="/assets/images/gallery/2.webp" type="image/webp")
+										img.gallery__img(src="/assets/images/gallery/2.jpg")
+									.gallery__info
+										.gallery__title Wedding loans
+										.gallery__description Prepare for one of the most exciting and stressful events of your life with a Personal Loans.
+							.col-sm-6.col-lg-4
+								a.gallery__item(href="/assets/images/gallery/3.jpg" data-fancybox="gallery")
+									picture.gallery__pic
+										source(srcset="/assets/images/gallery/3.webp" type="image/webp")
+										img.gallery__img(src="/assets/images/gallery/3.jpg")
+									.gallery__info
+										.gallery__title Home renovation loans
+										.gallery__description You've got a house now you want to make it a home.Our great rate Personal Loans can help you realise your grand plans.
+							.col-sm-6.col-lg-4
+								a.gallery__item(href="/assets/images/gallery/4.jpg" data-fancybox="gallery")
+									picture.gallery__pic
+										source(srcset="/assets/images/gallery/4.webp" type="image/webp")
+										img.gallery__img(src="/assets/images/gallery/4.jpg")
+									.gallery__info
+										.gallery__title Car loans
+										.gallery__description Whether you're upgrading your ride or adding to your garage, a Personal Loans gives you a great rate.
+							.col-sm-6.col-lg-4
+								a.gallery__item(href="/assets/images/gallery/5.jpg" data-fancybox="gallery")
+									picture.gallery__pic
+										source(srcset="/assets/images/gallery/5.webp" type="image/webp")
+										img.gallery__img(src="/assets/images/gallery/5.jpg")
+									.gallery__info
+										.gallery__title Debt consolidation loans
+										.gallery__description Juggling debts can be tricky, but you can save on fees and reduce interest by consolidating your debt with a Personal Loans.
+							.col-sm-6.col-lg-4
+								a.gallery__item(href="/assets/images/gallery/6.jpg" data-fancybox="gallery")
+									picture.gallery__pic
+										source(srcset="/assets/images/gallery/6.webp" type="image/webp")
+										img.gallery__img(src="/assets/images/gallery/6.jpg")
+									.gallery__info
+										.gallery__title Personal loans
+										.gallery__description Borrow for almost anything with a Personal Loans — wedding rings, boats, furniture, school fees, caravans and more.
+			.page__block.page__block--calculate
+				.calculate
+					.container-fluid
+						h4.calculate__title I want to calculate
+						.row.justify-content-around.justify-content-xl-between
+							.col-sm-6.col-md-4.col-xl-2
+								.calculate__icon
+									img.calculate__img(src="/assets/images/calculate/calculator.svg")
+									span.calculate__name My budget
+							.col-sm-6.col-md-4.col-xl-2
+								.calculate__icon
+									img.calculate__img(src="/assets/images/calculate/wallet.svg")
+									span.calculate__name My savings
+							.col-sm-6.col-md-4.col-xl-2
+								.calculate__icon
+									img.calculate__img(src="/assets/images/calculate/money.svg")
+									span.calculate__name How much can I borrow
+							.col-sm-6.col-md-4.col-xl-2
+								.calculate__icon
+									img.calculate__img(src="/assets/images/calculate/pie-chart.svg")
+									span.calculate__name My repayments
+							.col-sm-6.col-md-4.col-xl-2
+								.calculate__icon
+									img.calculate__img(src="/assets/images/calculate/law.svg")
+									span.calculate__name Balance transfer
+			.page__block.page__block--rates
+				.rates
+					.container-fluid
+						.rates__title Rates and fees
+						.row
+							.col-md-6.col-xl-3
+								.rates__item
+									.rates__percent 13.39
+										span.super %
+										span.sub p.a.
+									.rates__description Variable rate (for new loans only)
+							.col-md-6.col-xl-3
+								.rates__item
+									.rates__percent 14.26
+										span.super %
+										span.sub p.a.
+									.rates__description Variable comparison rate
+							.col-md-6.col-xl-3
+								.rates__item
+									.rates__percent 13.89
+										span.super %
+										span.sub p.a.
+									.rates__description Fixed rate (for new loans only)
+							.col-md-6.col-xl-3
+								.rates__item
+									.rates__percent 14.76
+										span.super %
+										span.sub p.a.
+									.rates__description Fixed comparison rate
+			.page__block.page__block--testimonials
+				.testimonials
+					.container-fluid
+						h4.testimonials__title What people say about us
+						.row
+							.col-md-4
+								.testimonials__item
+									i.testimonial__icon
+										svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+											use(xlink:href="#quot")
+									.testimonials__text
+										p I would just like to say thank you for your prompt and effective service, for your friendly and professional support staff! I will recommend your expert company to all my friends.
+									.testimonials__author Bernard Show
+									.testimonials__position Media Specialist
+							.col-md-4
+								.testimonials__item
+									i.testimonial__icon
+										svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+											use(xlink:href="#quot")
+									.testimonials__text
+										p Hi, guys! You've solved my problem in no time! Your efficient services and customer care are second to none! I am very happy! I will surely share my experience with my friends!
+									.testimonials__author Sarah Cole
+									.testimonials__position Chief Operating Officer
+							.col-md-4
+								.testimonials__item
+									i.testimonial__icon
+										svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+											use(xlink:href="#quot")
+									.testimonials__text
+										p I just want to thank you for your help. I was so pleased and grateful. Keep up the excellent work. Your site provides the best support I have ever encountered.
+									.testimonials__author Michael Ventura
+									.testimonials__position Project Manager
+			.page__block.page__block--action
+				.action
+					picture.action__pic
+						source(srcset="/assets/images/action/desktop.webp" type="image/webp")
+						img.action__img(src="/assets/images/action/desktop.jpg" alt="")
+					.container-fluid
+						h4.action__title Personal loans
+						.row.justify-content-around
+							.col-lg-9
+								.action__text
+									p You can use our personal loans to get the car you want, consolidate your debts or for something else, like a new motorbike, boat or renovation.
+							.col-12
+								a.btn.btn--success(href="#") Apply now!
+			.page__block.page__block--footer
+				footer.footer
+					.container-fluid
+						.row
+							.col-md-6
+								.footer-contacts
+									h4.footer-contacts__title Contacts
+									.row
+										.col-12
+											.footer-contacts__block
+												.footer-contacts__name Address:
+												address.footer-contacts__value 28 Jackson Blvd Ste 1020 Chicago IL 60604-2340
+										.col-12
+											.footer-contacts__block
+												.footer-contacts__name Phones:
+												.footer-contacts__value
+													a.footer-contacts__link(href="tel:80023456789") 800-2345-6789
+													|;&nbsp;
+													a.footer-contacts__link(href="tel:80023456790") 800-2345-6790
+										.col-12
+											.footer-contacts__block
+												.footer-contacts__name Hours:
+												.footer-contacts__value 7 Days a week from 9:00 am to 7:00 pm
+										.col-12
+											.footer-contacts__block
+												.footer-contacts__name E-mail:
+												.footer-contacts__value
+													a.footer-contacts__link(href="mailto:info@demolink.org") info@demolink.org
+										.col-12
+											.footer-contacts__block
+												.social-networks
+													a.social-networks__item(href="#")
+														i.social-networks__icon
+															svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+																use(xlink:href="#facebook-icon")
+													a.social-networks__item(href="#")
+														i.social-networks__icon
+															svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+																use(xlink:href="#twitter-icon")
+													a.social-networks__item(href="#")
+														i.social-networks__icon
+															svg.social-networks__vector(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+																use(xlink:href="#instagram-icon")
+							.col-md-6
+								.footer-form
+									.form__wrap
+										h4.form__title Contacts form
+										form.form__item
+											.form__group
+												input.form__control(type="text" name="first-name" placeholder="First Name")
+											.form__group
+												input.form__control(type="text" name="last-name" placeholder="Last Name")
+											.form__group
+												input.form__control(type="email" name="email" placeholder="E-mail")
+											.form__group
+												textarea.form__control(name="message" placeholder="Message")
+											.form__bottom
+												button.form__btn.btn.btn--primary Send
+			.page__block.page__block--map
+				.map-container#main-map
+					script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aded4eb251f2efc7817b63a7b31f49ec851cbaa59337978788c0b973bf142d48a&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=true")
+			.page__block.page__block--copyright
+				.copyright
+					.container-fluid
+						.row.justify-content-between
+							.col-12
+								p Personal Loans © 2016. All Rights Reserved
+
+
+		link(rel="stylesheet" type="text/css" href="assets/libs/fancybox/jquery.fancybox.min.css")
+
+		script(src="/assets/libs/jquery/jquery-3.4.1.min.js")
+		script(src="assets/libs/fancybox/jquery.fancybox.min.js")
+		script(src="assets/script/app.js")

@@ -1,0 +1,164 @@
+.price {
+  padding: 4.3775em 0;
+  background: #2bb0f8;
+  background: -moz-linear-gradient(left, #2bb0f8 0%, #5f56db 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #2bb0f8), color-stop(100%, #5f56db));
+  background: -webkit-linear-gradient(left, #2bb0f8 0%, #5f56db 100%);
+  background: -o-linear-gradient(left, #2bb0f8 0%, #5f56db 100%);
+  background: -ms-linear-gradient(left, #2bb0f8 0%, #5f56db 100%);
+  background: linear-gradient(to right, #2bb0f8 0%, #5f56db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2bb0f8', endColorstr='#5f56db', GradientType=1);
+  &__amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 224px;
+    height: 224px;
+    border: {
+      width: 2px;
+      style: solid;
+      color: #fff;
+      radius: 50%;
+    }
+    color: #fff;
+    font: {
+      family: $accentFontFamily;
+    }
+  }
+  &__your {
+    font: {
+      size: 1.125rem;
+    }
+  }
+  &__value {
+    font: {
+      size: 4.5rem;
+    }
+    line-height: 1.06097em;
+    &:before {
+      content: '$';
+      vertical-align: super;
+      font: {
+        size: .75em;
+      }
+    }
+  }
+  &__time {
+    font: {
+      size: 1.25rem;
+    }
+    line-height: 1.6em;
+  }
+  &__description {
+    margin-top: 2.5em;
+    color: #fff;
+    font: {
+      family: $accentFontFamily;
+    }
+    text-align: center;
+  }
+  &__title {
+    font: {
+      size: 2rem;
+      weight: 400;
+    }
+    line-height: 1.1em;
+  }
+  &__text {
+    margin-top: .8125em;
+    font: {
+      family: $defaultFontFamily;
+    }
+    &--big {
+      margin-top: 1.5625em;
+      font: {
+        family: $accentFontFamily;
+      }
+    }
+  }
+  &__footer {
+    margin-top: 2.1875rem;
+  }
+  &__btn {
+    display: block;
+    width: 100%;
+    max-width: 310px;
+    padding: 0.55em 1.3em;;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $mdBreakPoint) {
+  .price {
+    &__description {
+      margin-top: 0;
+      text-align: left;
+    }
+    &__btn {
+      margin: 0;
+    }
+    &__title {
+      font: {
+        size: 2.2rem;
+      }
+    }
+    &__text {
+      &--big {
+        font: {
+          size: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $lgBreakPoint) {
+  .price {
+    &__amount {
+      width: 264px;
+      height: 264px;
+    }
+    &__your {
+      font: {
+        size: 1.325rem;
+      }
+    }
+    &__value {
+      font: {
+        size: 5.375rem;
+      }
+    }
+    &__title {
+      font: {
+        size: 4.375rem;
+      }
+      line-height: 1.3em;
+    }
+  }
+}
+
+@media (min-width: $xlBreakPoint) {
+  .price {
+    &__amount {
+      width: 362px;
+      height: 362px;
+    }
+    &__your {
+      font: {
+        size: 1.875rem;
+      }
+    }
+    &__value {
+      font: {
+        size: 6.875rem;
+      }
+    }
+    &__time {
+      font: {
+        size: 1.5rem;
+      }
+    }
+  }
+}

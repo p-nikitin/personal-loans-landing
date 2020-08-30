@@ -1,0 +1,55 @@
+.action {
+  position: relative;
+  padding: 70px 0;
+  color: #fff;
+  text-align: center;
+  &__title {
+    position: relative;
+    font: {
+      size: 2rem;
+      family: $accentFontFamily;
+    }
+  }
+  &__pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__text {
+    margin-top: 25px;
+    line-height: 1.8;
+  }
+  .btn {
+    margin-top: 40px;
+    padding: 15px 70px;
+  }
+}
+
+@media (min-width: $mdBreakPoint) {
+  .action {
+    &__title {
+      font-size: 2.2rem;
+    }
+    &__text {
+      font-size: 1.25rem;
+    }
+  }
+}
+@media (min-width: $xlBreakPoint) {
+  .action {
+    &__title {
+      font-size: 4.375rem;
+    }
+    &__text {
+      font-size: 1.5rem;
+    }
+  }
+}

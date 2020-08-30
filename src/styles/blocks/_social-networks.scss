@@ -1,0 +1,26 @@
+.social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border: {
+      width: 1px;
+      style: solid;
+      color: $accentMiddleGrayColor;
+      radius: 50%;
+    }
+    &:not(:last-child) {
+      margin-right: .325em;
+    }
+  }
+  &__vector {
+    width: 20px;
+    height: 20px;
+  }
+}

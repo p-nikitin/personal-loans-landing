@@ -1,0 +1,56 @@
+.icons {
+  padding: 6.25em 0;
+  &__title {
+    font: {
+      size: 1.4rem;
+      family: $accentFontFamily;
+    }
+    line-height: 1.2;
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2.75em;
+  }
+  &__pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: {
+      color: $accentLightGrayColor;
+    }
+  }
+  &__img {
+    width: 90px;
+    height: 90px;
+  }
+  &__text {
+    margin-top: .3125em;
+    font: {
+      family: $accentFontFamily;
+    }
+    text-align: center;
+  }
+}
+
+@media (min-width: $mdBreakPoint) {
+  .icons {
+    &__title {
+      font: {
+        size: 1.875rem
+      }
+    }
+    &__text {
+      font: {
+        size: 1.25rem
+      }
+      line-height: 1.8125em;
+    }
+  }
+}

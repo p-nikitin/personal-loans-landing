@@ -1,0 +1,25 @@
+{
+  "name": "itrack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.6.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^4.13.1"
+  },
+  "browserslist": [
+    "last 10 version",
+    "> 1%",
+    "IE 10"
+  ]
+}

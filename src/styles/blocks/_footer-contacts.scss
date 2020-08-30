@@ -1,0 +1,46 @@
+.footer-contacts {
+  text-align: center;
+  &__block {
+    margin-top: .875em;
+  }
+  &__name {
+    display: inline-block;
+    padding-right: .2em;
+    font: {
+      size: 1.25rem;
+      family: $accentFontFamily;
+    }
+  }
+  &__value {
+    display: inline-block;
+    font: {
+      weight: 300;
+      size: .875rem;
+    }
+    color: #999;
+  }
+  &__link {
+    color: #999;
+    border: {
+      bottom: 1px solid transparent;
+    }
+    transition: .3s;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      border-color: #fff;
+    }
+  }
+  .social-networks {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $mdBreakPoint) {
+  .footer-contacts {
+    text-align: left;
+    .social-networks {
+      justify-content: flex-start;
+    }
+  }
+}
